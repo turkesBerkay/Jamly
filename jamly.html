@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jamly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section class="app">
+        <audio src="" id="audio"></audio>
+        <div class="app-header">
+            <div class="app-logo">
+                Jamly
+            </div>
+
+            <div class="about-app-btn" id="aboutBtn">
+                <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 12H18.01M12 12H12.01M6 12H6.01M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11C18.5523 11 19 11.4477 19 12ZM7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+            </div>
+
+            <div class="about-app">
+                <div id="about">About App</div>
+            </div>
+
+            <div class="about-app-active">
+                <div class="about-app-top">
+                    <div class="about-logo">
+                        Jamly
+                    </div>
+
+                    <div class="about-close" id="aboutClose">
+                        <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#f5f5f5f5"></path> </g></svg>
+                    </div>
+                </div>
+                <div class="about-app-middle">
+                    Jamly for Web <br>
+                    v1.0.0
+                </div>
+                <div class="about-app-bottom">
+                    Copyright © 2024 Jamly Co. <br>
+                    From Berkay Türkeş  <br>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="app-container">
+            <div class="music-list">
+                <div class="music-list-container">
+                    <div class="landing-page active">
+                        <div class="landing-page-top">
+                            <h1>Welcome to <span>Jamly</span></h1>
+                        </div>
+                        <div class="landing-page-bottom">
+                            <div class="library">
+                                <div class="library-header">
+                                    <h3>Library</h3>
+                                </div>
+
+                                <div class="library-items">
+                                    <div class="library-item" id="libraryItem">
+                                        <div class="library-item-detail">
+                                            <div class="library-item-img">
+                                                <img src="img/playlist-cover.jpg" alt="">
+                                            </div>
+                                            <div class="library-item-name">
+                                                My Playlist
+                                            </div>
+                                        </div>
+                                        <div class="library-item-options">
+                                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 12H18.01M12 12H12.01M6 12H6.01M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11C18.5523 11 19 11.4477 19 12ZM7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="playlist">
+                        <div class="playlist-top">
+                            <div class="prev-page" id="prevPage">
+                                <svg fill="#f5f5f5" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="45px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" stroke="#f5f5f5"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M44.942,50.412l14.037-15.487c0.742-0.818,0.68-2.083-0.139-2.824c-0.817-0.742-2.083-0.679-2.824,0.139L40.784,49.044 c-0.409,0.451-0.565,1.038-0.493,1.598c-0.016,0.564,0.196,1.131,0.647,1.539L57.74,67.412c0.383,0.348,0.864,0.519,1.344,0.519 c0.545,0,1.087-0.222,1.482-0.657c0.741-0.818,0.68-2.083-0.139-2.824L44.942,50.412z"></path> <path d="M84.133,49.756c0-18.448-15.01-33.457-33.458-33.457S17.218,31.308,17.218,49.756c0,18.449,15.009,33.458,33.457,33.458 S84.133,68.205,84.133,49.756z M50.675,79.214c-16.243,0-29.457-13.215-29.457-29.458c0-16.242,13.214-29.457,29.457-29.457 c16.243,0,29.458,13.215,29.458,29.457C80.133,65.999,66.918,79.214,50.675,79.214z"></path> </g> </g></svg>
+                            </div>
+                            
+                            <div class="playlist-detail">
+                                <div class="playlist-img">
+                                    <img src="img/playlist-cover.jpg" alt="">
+                                </div>
+
+                                <div class="playlist-name">
+                                    My Playlist
+                                </div>
+                            </div>
+
+
+                            
+                        </div>
+
+                        
+                        <div class="playlist-bottom">
+                            <div class="playlist-play">
+                                <div class="playlist-play-container">
+                                    <div class="playlist-play-btn" id="playlistPlayBtn">
+                                        <i id="playPause" class="fa-solid fa-play"></i>
+                                    </div>
+        
+                                    <div class="playlist-options">
+                                        <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 12H18.01M12 12H12.01M6 12H6.01M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11C18.5523 11 19 11.4477 19 12ZM7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-playlist">
+                                <div class="main-playlist-container">
+                                    <div class="main-playlist-header">
+                                        <div class="playlist-header-number">
+                                            #
+                                            <div class="playlist-header-content">
+                                                Header
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="playlist-header-duration">
+                                            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#f5f5f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M12 6V12" stroke="#f5f5f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M16.24 16.24L12 12" stroke="#f5f5f5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                                        </div>
+                                    </div>
+
+                                    <div class="main-playlist-songs"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="music-player">
+                <div class="music-player-container">
+                    <div class="music-player-options">
+                        <div class="music-player-more">
+                            <svg width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18 12H18.01M12 12H12.01M6 12H6.01M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12ZM19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11C18.5523 11 19 11.4477 19 12ZM7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11C6.55228 11 7 11.4477 7 12Z" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+
+                        <div class="music-player-get-smaller">
+                            <svg id="getMiniPlayer" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" transform="rotate(180)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="#f5f5f5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                        </div>
+                    </div>
+
+                    <div class="music-player-content">
+                        <div class="music-player-img">
+                            <img class="playingImage" src="" alt="">
+                        </div>
+                        
+                        <div class="music-player-names">
+                            <div class="singer artist">
+                            </div>
+
+                            <div class="title track-name">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="music-player-controls">
+                        <div class="music-player-controls-top">
+                            <div class="replay music-player-replay">
+                                <svg width="30px" height="30px" viewBox="0 -3 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>replay</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-412.000000, -622.000000)" fill=""> <path d="M443.67,633 L440.827,633 C439.862,626.772 434.488,622 427.984,622 C422.969,622 418.624,624.839 416.451,628.991 L418.315,629.736 C420.184,626.318 423.813,624 427.984,624 C433.381,624 437.862,627.881 438.805,633 L435.389,633 C435.079,633.301 434.783,633.486 435.227,634.007 L438.957,637.801 C439.267,638.101 439.768,638.101 440.076,637.801 L443.832,634.007 C444.141,633.706 443.979,633.301 443.67,633 L443.67,633 Z M427.984,646 C422.945,646 418.702,642.616 417.396,638 L420.647,638 C420.957,637.7 421.118,637.294 420.81,636.994 L417.054,633.199 C416.745,632.899 416.244,632.899 415.935,633.199 L412.204,636.994 C411.761,637.515 412.057,637.7 412.366,638 L415.347,638 C416.703,643.73 421.834,648 427.984,648 C432.664,648 436.754,645.524 439.047,641.82 L437.164,641.068 C435.193,644.039 431.819,646 427.984,646 L427.984,646 Z" id="replay" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                            </div>
+
+                            <div class="music-player-volume">
+                                <input class="volume-bar" style="width: 100px;" max="100" value="100" type="range" id="volume-bar">
+                                <div class="volume music-player-volume-icon">
+                                    <svg fill="none" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 21c3.527-1.547 5.999-4.909 5.999-9S19.527 4.547 16 3v2c2.387 1.386 3.999 4.047 3.999 7S18.387 17.614 16 19v2z"></path><path d="M16 7v10c1.225-1.1 2-3.229 2-5s-.775-3.9-2-5zM4 17h2.697L14 21.868V2.132L6.697 7H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2z"></path></g></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="music-player-controls-middle">
+                            <div class="current-time"></div>
+                            <input class="progress-bar" type="range" id="progress-bar" max="196" value="0">
+                            <div class="duration music-duration">
+                            </div>
+                        </div>
+                        <div class="music-player-controls-bottom">
+                            <div class="music-player-main-controls">
+                                <div class="previous-track">
+                                    <i class="fa-solid fa-backward-step prev"></i>
+                                </div>
+                                <div class="play play-pause-btn">
+                                    <i id="playPauseMp" class="fa-solid fa-play"></i>
+                                </div>
+                                <div class="next-track">
+                                    <i class="fa-solid fa-forward-step next"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mini-player">
+                <div class="mini-player-container">
+                    <div class="mini-player-content">
+                        <div class="mini-player-img" id="miniImageBtn">
+                            <img class="miniPlayingImage" src="" alt="">
+                        </div>
+        
+                        <div class="mini-player-names">
+                            <div class="mini-player-singer">
+                            </div>
+        
+                            <div class="mini-player-track">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mini-player-controls">
+                        <div class="mini-player-main-controls">
+                            <div class="mini-player-previous">
+                                <i class="fa-solid fa-backward-step miniPrev"></i>
+                            </div>
+        
+                            <div class="mini-player-play-pause">
+                                <i id="miniPlayPauseBtn" class="fa-solid fa-play"></i>
+                            </div>
+        
+                            <div class="mini-player-next">
+                                <i class="fa-solid fa-forward-step miniNext"></i>
+                            </div>
+                        </div>
+        
+                        <div class="mini-player-progress-bar">
+                            <div class="mini-current-time"></div>
+                            <input class="miniProgress-bar" type="range" id="progress-bar" max="196" value="0">
+                            <div class="mini-player-duration">
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="mini-player-options">
+                        <div class="mini-player-options-container">
+                            <div class="mini-player-replay">
+                                <svg width="30px" height="30px" viewBox="0 -3 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill=""><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>replay</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-412.000000, -622.000000)" fill=""> <path d="M443.67,633 L440.827,633 C439.862,626.772 434.488,622 427.984,622 C422.969,622 418.624,624.839 416.451,628.991 L418.315,629.736 C420.184,626.318 423.813,624 427.984,624 C433.381,624 437.862,627.881 438.805,633 L435.389,633 C435.079,633.301 434.783,633.486 435.227,634.007 L438.957,637.801 C439.267,638.101 439.768,638.101 440.076,637.801 L443.832,634.007 C444.141,633.706 443.979,633.301 443.67,633 L443.67,633 Z M427.984,646 C422.945,646 418.702,642.616 417.396,638 L420.647,638 C420.957,637.7 421.118,637.294 420.81,636.994 L417.054,633.199 C416.745,632.899 416.244,632.899 415.935,633.199 L412.204,636.994 C411.761,637.515 412.057,637.7 412.366,638 L415.347,638 C416.703,643.73 421.834,648 427.984,648 C432.664,648 436.754,645.524 439.047,641.82 L437.164,641.068 C435.193,644.039 431.819,646 427.984,646 L427.984,646 Z" id="replay" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+                            </div>
+            
+                            <div class="mini-player-volume">
+                                <div class="miniVolume mini-player-volume-icon">
+                                    <svg fill="none" width="30px" height="30px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" stroke="none"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M16 21c3.527-1.547 5.999-4.909 5.999-9S19.527 4.547 16 3v2c2.387 1.386 3.999 4.047 3.999 7S18.387 17.614 16 19v2z"></path><path d="M16 7v10c1.225-1.1 2-3.229 2-5s-.775-3.9-2-5zM4 17h2.697L14 21.868V2.132L6.697 7H4c-1.103 0-2 .897-2 2v6c0 1.103.897 2 2 2z"></path></g></svg>
+                                </div>
+                                <input class="volume-bar-mini" style="width: 100px;" max="100" value="100" type="range" id="volume-bar-mini">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="mini-player-close">
+                    <svg id="miniPlayerClose" width="30px" height="30px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M7 17L17 7M17 7H8M17 7V16" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <script src="music-player.js"></script>
+    <script src="music.js"></script>
+    <script src="jamly-app.js"></script>
+</body>
+</html>
